@@ -41,3 +41,103 @@
     transform: translateX(0);
 }
 
+
+/*** Mejores Frutas Section ***/
+.mejores-frutas {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.mejores-frutas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.mejores-frutas-imagen {
+    flex: 1;
+    min-width: 300px;
+}
+
+.imagen-frutas {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.mejores-frutas-contenido {
+    flex: 1;
+    min-width: 300px;
+}
+
+.titulo-frutas {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.descripcion-frutas {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.caracteristica-item {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.icono-check {
+    color: var(--primary);
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.btn-mas-info {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 35px;
+    background-color: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(60, 184, 21, 0.3);
+}
+
+.btn-mas-info:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(246, 80, 5, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mejores-frutas-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .titulo-frutas {
+        font-size: 2rem;
+    }
+    
+    .descripcion-frutas {
+        font-size: 1rem;
+    }
+}
+
+
