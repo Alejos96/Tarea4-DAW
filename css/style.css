@@ -470,3 +470,198 @@
 }
 
 
+/*** Visita Nuestras Fincas Section ***/
+.visita-fincas {
+    padding: 100px 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/carousel-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.fincas-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fincas-contenido {
+    margin-bottom: 40px;
+}
+
+.fincas-titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.fincas-descripcion {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.fincas-boton {
+    margin-top: 20px;
+}
+
+.btn-ingresar {
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(60, 184, 21, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-ingresar:hover {
+    background-color: var(--secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(246, 80, 5, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .visita-fincas {
+        padding: 80px 15px;
+    }
+    
+    .fincas-titulo {
+        font-size: 2.2rem;
+    }
+    
+    .fincas-descripcion {
+        font-size: 1rem;
+    }
+    
+    .btn-ingresar {
+        padding: 12px 40px;
+        font-size: 1rem;
+    }
+}
+
+
+/*** Footer Section ***/
+.footer-seccion {
+    background-color: var(--dark);
+    padding: 60px 20px 30px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-columna {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-brand {
+    flex: 1.5;
+}
+
+.footer-texto {
+    color: #aaa;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.footer-titulo {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-titulo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--primary);
+}
+
+.footer-item {
+    color: #aaa;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.footer-icono {
+    color: var(--primary);
+    margin-right: 12px;
+    font-size: 1.1rem;
+}
+
+.footer-link {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    padding-left: 0;
+}
+
+.footer-link:hover {
+    color: var(--primary);
+    padding-left: 10px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .footer-columna {
+        flex: 1 1 calc(50% - 25px);
+    }
+    
+    .footer-brand {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-seccion {
+        padding: 40px 15px 20px;
+    }
+    
+    .footer-container {
+        gap: 30px;
+    }
+    
+    .footer-columna {
+        flex: 1 1 100%;
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .footer-titulo::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-item {
+        justify-content: center;
+    }
+}
+
+
