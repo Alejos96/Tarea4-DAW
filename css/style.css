@@ -141,3 +141,124 @@
 }
 
 
+/*** Nos Caracteriza Section ***/
+.nos-caracteriza {
+    padding: 80px 20px;
+    background-color: var(--light);
+    text-align: center;
+}
+
+.titulo-seccion {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+.descripcion-seccion {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+.caracteristicas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.caracteristica-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    min-width: 280px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.caracteristica-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-contenido {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.icono-caracteristica {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.caracteristica-card:hover .icono-caracteristica {
+    transform: scale(1.1);
+}
+
+.card-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+.card-descripcion {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.card-link {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.card-link:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(246, 80, 5, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .caracteristica-card {
+        flex: 1 1 calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .nos-caracteriza {
+        padding: 60px 15px;
+    }
+    
+    .titulo-seccion {
+        font-size: 2rem;
+    }
+    
+    .caracteristica-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+
